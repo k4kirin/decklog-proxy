@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/decklog-proxy/static/css/main.865d5e3e.css",
+    "main.js": "/decklog-proxy/static/js/main.1f2a9ff0.js",
+    "static/js/787.28cb0dcd.chunk.js": "/decklog-proxy/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/decklog-proxy/index.html",
+    "main.865d5e3e.css.map": "/decklog-proxy/static/css/main.865d5e3e.css.map",
+    "main.1f2a9ff0.js.map": "/decklog-proxy/static/js/main.1f2a9ff0.js.map",
+    "787.28cb0dcd.chunk.js.map": "/decklog-proxy/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.865d5e3e.css",
+    "static/js/main.1f2a9ff0.js"
+  ]
+}
