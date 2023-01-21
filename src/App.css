@@ -9,23 +9,26 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 7.5s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 260px 100%;
   display: flex;
-  flex-direction: column;
+  /* width: 100%; */
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
+body{
+  background-color: #000000;
+  font-size: calc(10px + 2vmin);
+  color: white;
 
-.App-link {
-  color: #61dafb;
+
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +38,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.author{
+  background-color: #282c34;
+  text-align: right;
+  font-size: 16px;
+}
+
+
+.author a{
+  color:white;
+}
+
+input[type=text] {
+  height: 24px;
+  width: 70px;
+  font-size: 22px;
+  text-transform:uppercase;
+}
+
+.proxies-card {
+  display: inline-block;
+  position: relative;
+}
+
+.card {
+}
+
+.pop:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 252, 127, 0.7);
+}
+.notpop:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@media print {
+  .dont-print,
+  footer,
+  header,
+  .author,
+  .App-header{
+    display:none
+  }
+}
+@page
+{
+  size: auto;   /* auto is the initial value */
+
+  /* this affects the margin in the printer settings */
+  margin: 2mm 2mm 2mm 2mm;
 }
