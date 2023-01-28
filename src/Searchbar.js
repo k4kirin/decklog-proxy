@@ -43,13 +43,13 @@ function Searchbar(){
         const imgStyle = isHorizontal ? {/*transform: 'rotate(90deg) translate(-1.25cm, 1.25cm)',*/ width: height, height: width, } : {width: width, height: height};
         // const imgStyle = {width: width, height: height};
         const divStyle = {
-            // width: width, height: height,
-            display: 'inline-block',
+            width: width, height: height,
+            // display: 'inline-block',
+            float: 'left',
             position: 'relative',};
+
         return (
-            <div class={index === toPop ? "card pop" : "card notpop"} onClick={clickCardHandler} id={index} style={divStyle}>
-                <img src ={url} class="proxies-card clip" alt={url} style={imgStyle}/>
-            </div>
+            <div class={index === toPop ? "card pop" : "card notpop"} onClick={clickCardHandler} id={index} style={divStyle}><img src ={url} class="proxies-card clip" alt={url} style={imgStyle}/></div>
         )
     }
 
